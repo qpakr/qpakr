@@ -1,0 +1,27 @@
+package ko;
+import java.util.Scanner;
+public class ko2 {
+	
+	static int aa(int a){
+		
+		int sum=0;
+		if(a==1)return 1;
+		else if(a==2)return 2;
+		else return sum=sum+aa(a-1)+aa(a-2);
+		
+	}
+	
+	public static void main(String args[]){
+	Scanner scan=new Scanner(System.in);
+	int c;
+	int i;
+	int ma[]=new int[50];	
+		c=scan.nextInt();
+		for(i=0;i<c;i++)
+		ma[i]=scan.nextInt();
+		for(i=0;i<c;i++)
+		System.out.println(aa(ma[i]));
+	
+
+}
+	}
